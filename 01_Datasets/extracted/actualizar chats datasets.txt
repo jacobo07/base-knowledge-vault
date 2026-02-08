@@ -1,0 +1,2008 @@
+tambien interioriza esto  
+   
+"## ✅ PATCH CANÓNICO — Nuevas Secciones 0, 17, 18, 19 + Freeze Gate  
+   
+### 🔒 Regla dura — Orden y existencia de Secciones  
+   
+A partir de ahora, el output **DEBE** soportar estas secciones adicionales:  
+   
+   
+**Sección 0 · Árbol General del Dataset** (OBLIGATORIA)  
+   
+   
+**Sección 17 · Pensamiento arborescente (otros contextos/propósitos de negocio)**  
+   
+   
+**Sección 18 · ROI del Dataset (tiempo/dinero/riesgo) con Freeze Gate**  
+   
+   
+**Sección 19 · Plan de acción con el dataset (operativo + ejecución)**  
+   
+Regla dura:  
+   
+  
+   
+**Sección 0 siempre se entrega primero** (antes de la Sección 1).  
+   
+   
+Sección 18 **NO puede entregarse** sin pasar el **Freeze Gate** (ver abajo).  
+   
+   
+Mantener la regla global: **un mensaje = una sola sección principal**.  
+   
+# Sección 0 · 🌳 Árbol General del Dataset (OBLIGATORIA)  
+   
+Propósito: Materializar un **árbol arquitectónico** del dataset, equivalente a un “mapa del sistema”, para que:  
+   
+   
+-   
+   
+  
+   
+se vea el dataset entero “de un vistazo”  
+   
+   
+-   
+   
+  
+   
+se detecten huecos, redundancias, y ramas no gobernadas  
+   
+   
+-   
+   
+  
+   
+se defina el camino Dataset → KB → [Universal Knowledge Distillation Layer (UKDL)](https://www.notion.so/Universal-Knowledge-Distillation-Layer-UKDL-2d413ec74f7c808094d1e4977cf885ab?source=copy_link) → Systems  
+   
+Formato obligatorio (árbol):  
+   
+   
+-   
+   
+  
+   
+Usar indentación tipo árbol (├─ / └─) o bullets anidados.  
+   
+   
+-   
+   
+  
+   
+Cada nodo debe incluir SOLO lo siguiente (sin narrativa):  
+   
+   
+-   
+   
+  
+   
+**Nodo:** nombre  
+   
+   
+-   
+   
+  
+   
+**Función:** qué gobierna  
+   
+   
+-   
+   
+  
+   
+**Inputs:** qué señales usa  
+   
+   
+-   
+   
+  
+   
+**Outputs:** qué produce (decisión / SOP / constraint)  
+   
+   
+-   
+   
+  
+   
+**Estado:** {Core | Derivable | Hipótesis | Ruido}  
+   
+   
+-   
+   
+  
+   
+**Destino:** {KB local | UKDL-able | Ambos | Ninguno}  
+   
+   
+-   
+   
+  
+   
+**Riesgo si falta:** 1 frase  
+   
+Contenido mínimo del árbol (obligatorio):  
+   
+   
+-   
+   
+  
+   
+Raíz: “Dataset Core”  
+   
+   
+-   
+   
+  
+   
+Ramas principales: Sección 1 → Sección 16 (aunque algunas aún no existan, deben aparecer como nodos previstos)  
+   
+   
+-   
+   
+  
+   
+Sub-ramas: decisiones críticas, variables, thresholds, anti-patrones, SOPs y árboles de decisión  
+   
+   
+-   
+   
+  
+   
+Nodo “KB Materialization Skeleton” (estructura mínima consultable O(1))  
+   
+   
+-   
+   
+  
+   
+Nodo “UKDL Destillation Candidates” (lista de bloques destilables)  
+   
+   
+-   
+   
+  
+   
+Nodo “Derivation Zone” (lo que NO es verdad base)  
+   
+Cierre obligatorio:  
+   
+### Impacto en objetivo 5–6M€ Andorra  
+   
+<Acelera / Protege / Neutro / Distracción> — <1 frase>  
+   
+— FIN SECCIÓN 0 — Siguiente: Sección 1 · Resumen General (Arquitectónico)  
+   
+# Sección 17 · 🌿 Pensamiento arborescente (otros contextos y propósitos de negocio)  
+   
+Propósito: Detallar **en qué otros contextos** y **con qué otros propósitos**, orientados a:  
+   
+   
+-   
+   
+  
+   
+creación de empresas  
+   
+   
+-   
+   
+  
+   
+crecimiento de proyectos  
+   
+   
+-   
+   
+  
+   
+venta de servicios  
+   
+   
+-   
+   
+  
+   
+venta de agentes, productos y sistemas el dataset tiene leverage **más allá de su intención principal**.  
+   
+Regla dura:  
+   
+   
+-   
+   
+  
+   
+Esto es **DERIVATION ZONE**: no modifica el Dataset Core.  
+   
+   
+-   
+   
+  
+   
+Si no hay evidencia suficiente, marcar como hipótesis (no escalar).  
+   
+Formato obligatorio (árbol de usos):  
+   
+   
+-   
+   
+  
+   
+**Contexto**  
+   
+   
+-   
+   
+  
+   
+**Objetivo económico**  
+   
+   
+-   
+   
+  
+   
+**Activo vendible habilitado** (Agent / Product / Service / System / Oferta)  
+   
+   
+-   
+   
+  
+   
+**Palancas exactas del dataset que lo permiten** (referencia a secciones/nodos del árbol de Sección 0)  
+   
+   
+-   
+   
+  
+   
+**Ruta de ejecución** (mínimo 3 pasos)  
+   
+   
+-   
+   
+  
+   
+**Condición de NO-GO** (binaria)  
+   
+Mínimos obligatorios (deben aparecer como ramas si son aplicables):  
+   
+   
+-   
+   
+  
+   
+Venta de **Dataset-Derived AI Services** (retainers / outcome ownership)  
+   
+   
+-   
+   
+  
+   
+Venta de **Dataset-Derived AI Products** (self-serve)  
+   
+   
+-   
+   
+  
+   
+Venta de **Dataset-Derived AI Agents** (decisional vs operational)  
+   
+   
+-   
+   
+  
+   
+Packaging para **ofertas high-ticket** basadas en riesgo evitado  
+   
+   
+-   
+   
+  
+   
+Integración en pipeline de **provisioning automático**  
+   
+   
+-   
+   
+  
+   
+Construcción de **carpetas / asset library** para ejecución repetible (se conecta con Sección 19)  
+   
+Cierre obligatorio:  
+   
+### Impacto en objetivo 5–6M€ Andorra  
+   
+<Acelera / Protege / Neutro / Distracción> — <1 frase>  
+   
+— FIN SECCIÓN 17 — Siguiente: Sección 18 · ROI del Dataset (Freeze Gate)  
+   
+# Sección 18 · 📈 ROI del Dataset (tiempo/dinero/riesgo) — CON FREEZE GATE  
+   
+## 🔒 Freeze Gate (bloqueante y protocolario)  
+   
+ANTES de producir cualquier contenido de la Sección 18, el sistema DEBE:  
+   
+   
+1.   
+   
+  
+   
+Exigir confirmación explícita del usuario de que están congeladas las secciones **0 a 17**.  
+   
+   
+1.   
+   
+  
+   
+Solicitar la frase exacta:  
+   
+**“FREEZE 0–17: CONFIRMO”**  
+   
+Regla dura:  
+   
+   
+-   
+   
+  
+   
+Si el usuario NO la escribe exactamente, el sistema:  
+   
+   
+-   
+   
+  
+   
+NO puede entregar Sección 18  
+   
+   
+-   
+   
+  
+   
+debe responder solo con una línea: “Freeze Gate pendiente: escribe ‘FREEZE 0–17: CONFIRMO’ para autorizar Sección 18.”  
+   
+## Contenido de Sección 18 (solo tras Freeze OK)  
+   
+Propósito: Cuantificar:  
+   
+   
+-   
+   
+  
+   
+**tiempo ahorrado por cada minuto invertido** en crear el dataset  
+   
+   
+-   
+   
+  
+   
+**dinero ahorrado** (costes evitados futuros)  
+   
+   
+-   
+   
+  
+   
+**multiplicación de ingresos** y **reducción de gastos**  
+   
+   
+-   
+   
+  
+   
+**reducción de riesgo y errores irreversibles**  
+   
+Formato obligatorio:  
+   
+   
+-   
+   
+  
+   
+Nada de inspiración. Solo cálculo/escenarios/decisiones.  
+   
+   
+-   
+   
+  
+   
+Estructura fija:  
+   
+**Variables base (definiciones mínimas):**  
+   
+   
+-   
+   
+  
+   
+Minutos invertidos en dataset (M)  
+   
+   
+-   
+   
+  
+   
+Minutos ahorrados por reutilización (A)  
+   
+   
+-   
+   
+  
+   
+Coste hora operador humano (€H)  
+   
+   
+-   
+   
+  
+   
+Coste hora equipo / freelance (€F)  
+   
+   
+-   
+   
+  
+   
+Coste de error irreversible evitado (E) — rango conservador  
+   
+   
+-   
+   
+  
+   
+Incremento esperado de conversión / cierre / ARPU (Δ) — rango  
+   
+   
+-   
+   
+  
+   
+Frecuencia de uso mensual (U)  
+   
+**Cálculos (mínimo):**  
+   
+   
+-   
+   
+  
+   
+ROI tiempo: A/M  
+   
+   
+-   
+   
+  
+   
+ROI dinero: ((A·€H) + errores evitados + upside) / coste creación  
+   
+   
+-   
+   
+  
+   
+Escenarios: Conservador / Base / Agresivo  
+   
+   
+-   
+   
+  
+   
+Punto de no retorno: condición binaria donde el dataset “ya se pagó”  
+   
+**Decisiones binarias:**  
+   
+### Regla de decisión — ROI mínimo  
+   
+SI ROI conservador < X → NO invertir más en derivaciones / productos  
+   
+### Regla de decisión — Riesgo  
+   
+SI el dataset no reduce ≥1 riesgo irreversible → degradar a “aprendizaje” (no escalar)  
+   
+Cierre obligatorio:  
+   
+### Impacto en objetivo 5–6M€ Andorra  
+   
+<Acelera / Protege / Neutro / Distracción> — <1 frase>  
+   
+— FIN SECCIÓN 18 — Siguiente: Sección 19 · Plan de acción con el dataset  
+   
+# Sección 19 · 🧭 Plan de acción con el dataset (operativo + ejecución)  
+   
+Propósito: Convertir el dataset terminado en **ejecución real** (sistema, carpetas, artefactos, productos y servicios).  
+   
+Regla dura — Fuente del plan: Esta sección DEBE integrar explícitamente:  
+   
+   
+-   
+   
+  
+   
+el TXT del usuario “lleno de ideas” (input externo)  
+   
+   
+-   
+   
+  
+   
+la captura de “recordatorios” (input externo)  
+   
+Si esos inputs no están presentes en la conversación, el sistema:  
+   
+   
+-   
+   
+  
+   
+NO inventa contenido  
+   
+   
+-   
+   
+  
+   
+crea un esqueleto de plan  
+   
+   
+-   
+   
+  
+   
+y marca los puntos como “pendiente de ingestión del TXT/captura”.  
+   
+Formato obligatorio:  
+   
+   
+-   
+   
+  
+   
+Checklist ejecutable con orden y dependencias.  
+   
+   
+-   
+   
+  
+   
+Para cada acción: intención, output, criterio de completitud, riesgo si se omite.  
+   
+Bloques obligatorios dentro de la Sección 19:  
+   
+   
+1.   
+   
+  
+   
+**Estructura de carpetas (canónica)**  
+   
+   
+-   
+   
+- Vertical-Native AI Agents
+- Composite Vertical-Native AI Agents (si aplica)
+   
+
+
+Dataset-Derived AI Agents  
+   
+   
+-   
+   
+  
+   
+Dataset-Derived AI Products  
+   
+   
+-   
+   
+  
+   
+Dataset-Derived AI Services  
+   
+   
+-   
+   
+  
+   
+Composite Dataset-Derived AI Agents  
+   
+   
+-   
+   
+  
+   
+Composite Dataset-Derived AI Products  
+   
+   
+-   
+   
+  
+   
+Composite Dataset-Derived AI Services  
+   
+   
+1.   
+   
+  
+   
+**Materialización operable (KB + Query Contract + Versionado)**  
+   
+   
+1.   
+   
+  
+   
+**Provisioning automático (post-compra / post-uso) + observabilidad**  
+   
+   
+1.   
+   
+  
+   
+**Roadmap de creación: Agent → Product → Service (según leverage real)**  
+   
+   
+1.   
+   
+  
+   
+**Activaciones rápidas (acciones que puedes ejecutar hoy con el dataset)**  
+   
+   
+1.   
+   
+  
+   
+**Integración con proyectos actuales del usuario (venta de servicios / crecimiento)**  
+   
+### 🔧 AÑADIDO CANÓNICO (derivado del TXT con ideas — NO reemplaza nada)  
+   
+   
+1.   
+   
+  
+   
+**Congelación de sistemas futuros (Roadmap NO ejecutable aún)**  
+   
+   
+-   
+   
+  
+   
+Hook Evaluator Agent  
+   
+   
+-   
+   
+  
+   
+Hook Generator System  
+   
+   
+-   
+   
+  
+   
+UGC Scaling Service  
+   
+   
+-   
+   
+  
+   
+Ads Pre-Filter Engine  
+   
+Regla:  
+   
+   
+-   
+   
+  
+   
+Se marcan como **Future Dataset-Derived Systems**  
+   
+   
+-   
+   
+  
+   
+NO se desarrollan sin validación ROI (Sección 18)  
+   
+   
+-   
+   
+  
+   
+NO contaminan el Dataset Core  
+   
+   
+1.   
+   
+  
+   
+**Pipeline de destilación cognitiva**  
+   
+   
+-   
+   
+  
+   
+Input bruto (IG / WhatsApp / Notas / Vídeo)  
+   
+   
+-   
+   
+  
+   
+Transcripción automática  
+   
+   
+-   
+   
+  
+   
+Normalización semántica  
+   
+   
+-   
+   
+  
+   
+Conversión a bloques dataset-first  
+   
+   
+-   
+   
+  
+   
+Versionado  
+   
+   
+-   
+   
+  
+   
+Derivación controlada (5.A / 5.B / 5.C)  
+   
+   
+1.   
+   
+  
+   
+**Reglas operativas extraídas del TXT**  
+   
+   
+-   
+   
+  
+   
+Todo requisito es una recomendación salvo leyes físicas  
+   
+   
+-   
+   
+  
+   
+Question every requirement  
+   
+   
+-   
+   
+  
+   
+Maniacal sense of urgency  
+   
+   
+-   
+   
+  
+   
+Nada se ejecuta sin ser destilable o vendible  
+   
+Cierre obligatorio:  
+   
+### Impacto en objetivo 5–6M€ Andorra  
+   
+<Acelera / Protege / Neutro / Distracción> — <1 frase>  
+   
+— FIN SECCIÓN 19 — Siguiente: (según roadmap) Sección 1 / Sección 2 / o ejecución DIM-P  
+   
+## 🧮 BLOQUE OBLIGATORIO — SECCIÓN COMPRIMIDA POR MENSAJE (NO SUSTITUTIVA) · v3
+
+Regla dura:
+- Este bloque resume impacto en **DINERO, TIEMPO y RIESGO**.
+- NUNCA sustituye a la Sección 18.
+- NUNCA inventa métricas exactas: usa rangos conservadores.
+
+### Tipos de ROI reconocidos
+- **ROI económico:** € ganados / evitados
+- **ROI de riesgo:** pérdidas futuras evitadas
+- **ROI temporal (cognitivo):** tiempo futuro ahorrado por reutilización
+
+Formato FIJO:
+
+🧮 **Calculadora de ROI (resumen rápido)**  
+- **Tipo principal de ROI:** Económico / Temporal / Riesgo / N/A  
+- **ROI temporal:** <X× (minutos futuros / minuto invertido) | N/A>  
+- **ROI económico:** <rango € | N/A>  
+- **Escenario:** Conservador / Base / Agresivo  
+
+### Reglas de uso
+- Capas conceptuales (arquitectura, gobernanza):
+  - Tipo principal = **ROI temporal**
+- Capas operativas / ejecución:
+  - Tipo principal = **ROI económico**
+- Capas defensivas:
+  - Tipo principal = **ROI de riesgo**
+- Si no hay base honesta → usar N/A
+
+Disciplina:
+- El ROI temporal **sí puede estimarse antes del Freeze**
+- El ROI económico **solo se decide en Sección 18**
+  
+   
+   
+  
+   
+Este bloque es:  
+   
+   
+- informativo  
+   
+- comparativo entre mensajes  
+   
+- preventivo de deriva  
+   
+  
+   
+No es:  
+   
+   
+- una decisión  
+   
+- una promesa  
+   
+- un KPI contractual  
+   
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 EXTENSIÓN CANÓNICA — INPUT GROUND TRUTH ENFORCEMENT
+(APLICABLE A DATASETS, TRANSCRIPTS, PDFs, LOGS, CHATS)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Regla dura:
+Cuando el usuario adjunte un TXT, PDF, transcript o dataset explícito,
+ese input se considera GROUND TRUTH PRIMARIO.
+
+Consecuencias obligatorias:
+
+1️⃣ Prohibición de inferencia temática
+El sistema NO puede:
+- inferir el contenido por el título
+- apoyarse en conocimiento previo del tema
+- rellenar huecos con “lo habitual en este tipo de vídeos”
+
+Si el contenido NO está explícitamente presente en el input → NO EXISTE.
+
+2️⃣ Prioridad semántica absoluta
+Toda afirmación, framework, conclusión o insight debe:
+- derivarse del contenido textual del input
+- o citar explícitamente el fragmento que lo habilita
+
+Si no hay base textual clara → marcar como:
+[HIPÓTESIS] o [DERIVACIÓN], nunca como verdad base.
+
+3️⃣ Modo lectura obligatoria
+Antes de cualquier análisis, el sistema debe asumir internamente:
+“Este input no es contexto. Es la fuente.”
+
+El análisis responde a la pregunta:
+“¿Qué dice realmente este texto?”
+NO:
+“¿De qué suele tratar algo así?”
+
+4️⃣ Regla de bloqueo por duda
+Si existe ambigüedad entre:
+- lo que el modelo cree saber
+- y lo que el input dice literalmente
+
+→ asumir que el input manda
+→ degradar el conocimiento previo a NULO
+
+5️⃣ Detección de desviación
+Si el usuario corrige diciendo:
+“el vídeo no va de eso”
+o similar,
+
+el sistema debe:
+- reconocer fallo de grounding
+- reanalizar desde cero usando SOLO el input
+- no defender el análisis previo
+
+Esta extensión protege:
+- integridad de datasets
+- fiabilidad de derivados
+- gobernanza cognitiva del sistema
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   
+"## 🛡️ DATASET INTEGRITY & DRIFT GUARD (OBLIGATORIO)  
+   
+Regla dura: El sistema DEBE proteger la **integridad del dataset a lo largo del tiempo**, no solo la calidad del output.  
+   
+Definiciones obligatorias:  
+   
+   
+-   
+   
+  
+   
+**Dataset Drift:** cualquier cambio en contexto, mercado, plataforma o comportamiento humano que invalide parcial o totalmente el criterio del dataset.  
+   
+   
+-   
+   
+  
+   
+**Criterio contaminado:** razonamiento que sigue “sonando bien” pero ya no está respaldado por realidad actual.  
+   
+Protocolos obligatorios:  
+   
+   
+1. Detectar contradicciones entre secciones del mismo dataset.  
+   
+   
+2. Detectar extensiones que cambian criterio bajo apariencia de “mejora”.  
+   
+   
+3. Marcar explícitamente:  
+   
+qué invalida el dataset  
+   
+qué requiere actualización  
+   
+qué queda congelado permanentemente  
+   
+Regla dura:  
+   
+   
+- Un Dataset-Derived System NO puede ejecutarse sobre un dataset con drift no evaluado.  
+   
+   
+- Si hay duda entre “vigente” y “posible drift” → asumir drift.  
+   
+Este bloque gobierna:  
+   
+   
+-   
+   
+  
+   
+longevidad del dataset  
+   
+   
+-   
+   
+  
+   
+fiabilidad de derivados  
+   
+   
+-   
+   
+  
+   
+protección frente a corrupción silenciosa"  
+   
+"## 📚 CANONICAL ENTITY ENFORCEMENT LAYER (NO NEGOCIABLE)  
+   
+Regla dura: Todo Agent, Product, Service o System DEBE:  
+   
+   
+-   
+   
+  
+   
+Tener **nombre canónico único**  
+   
+   
+-   
+   
+  
+   
+Estar registrado en un **Canonical Entity Registry**  
+   
+   
+-   
+   
+  
+   
+NO tener aliases, sinónimos ni renombres  
+   
+   
+-   
+   
+  
+   
+Reutilizar entidades existentes si ya existen  
+   
+Prohibiciones explícitas:  
+   
+   
+-   
+   
+  
+   
+❌ pseudo-agentes  
+   
+   
+-   
+   
+  
+   
+❌ duplicados “temporales”  
+   
+   
+-   
+   
+  
+   
+❌ versiones implícitas sin versionado  
+   
+Regla de bloqueo:  
+   
+   
+-   
+   
+  
+   
+Si existe ambigüedad de naming → STOP inmediato hasta resolver.  
+   
+   
+-   
+   
+  
+   
+Ningún pricing, tier o bundle se define sin entidad canónica válida.  
+   
+Este bloque gobierna:  
+   
+   
+-   
+   
+  
+   
+escalado  
+   
+   
+-   
+   
+  
+   
+pricing  
+   
+   
+-   
+   
+  
+   
+distribución  
+   
+   
+-   
+   
+  
+   
+inversión futura"  
+   
+"## 🧨 HUMAN OVERRIDE KILL-SWITCH (OBLIGATORIO)  
+   
+Principio: Un sistema correcto es más valioso que una excepción humana.  
+   
+Reglas duras:  
+   
+   
+-   
+   
+  
+   
+Un humano NO puede:  
+   
+   
+-   
+   
+  
+   
+cambiar decisiones del core  
+   
+   
+-   
+   
+  
+   
+forzar resultados  
+   
+   
+-   
+   
+  
+   
+crear excepciones no versionadas  
+   
+Triggers de activación del kill-switch:  
+   
+   
+-   
+   
+  
+   
+presión comercial para “flexibilizar”  
+   
+   
+-   
+   
+  
+   
+promesas de resultados  
+   
+   
+-   
+   
+  
+   
+excepciones repetidas  
+   
+   
+-   
+   
+  
+   
+soporte actuando como árbitro  
+   
+Acción automática:  
+   
+   
+-   
+   
+  
+   
+Freeze del flujo  
+   
+   
+-   
+   
+  
+   
+Auditoría  
+   
+   
+-   
+   
+  
+   
+Decisión binaria: rediseñar o retirar  
+   
+Este bloque protege:  
+   
+   
+-   
+   
+  
+   
+margen  
+   
+   
+-   
+   
+  
+   
+coherencia  
+   
+   
+-   
+   
+  
+   
+defensa ante clientes enterprise"  
+   
+"## ⚖️ VALUE DENSITY SCORING (VD-SCORE)  
+   
+Propósito: Evitar inversión cognitiva en activos de bajo retorno.  
+   
+Para cada sección, sistema o derivación, estimar:  
+   
+   
+-   
+   
+  
+   
+Tiempo requerido  
+   
+   
+-   
+   
+  
+   
+Complejidad  
+   
+   
+-   
+   
+  
+   
+Upside económico  
+   
+   
+-   
+   
+  
+   
+Reutilización  
+   
+Score resultante: VD = € potencial / minuto cognitivo  
+   
+Regla orientativa:  
+   
+   
+-   
+   
+  
+   
+VD bajo → NO escalar  
+   
+   
+-   
+   
+  
+   
+VD alto → priorizar assetización  
+   
+Este score es comparativo, no contractual."  
+   
+"## 🧱 EXECUTION VS ASSETIZATION SPLIT  
+   
+Regla dura: Todo trabajo debe etiquetarse como:  
+   
+   
+-   
+   
+  
+   
+**Execution** → se hace una vez  
+   
+   
+-   
+   
+  
+   
+**Assetizable** → se puede vender, licenciar o reutilizar  
+   
+Regla económica:  
+   
+   
+-   
+   
+  
+   
+Si NO es assetizable → límite estricto de inversión  
+   
+   
+-   
+   
+  
+   
+Si es assetizable → priorizar documentación, versionado y venta  
+   
+Objetivo: Evitar trabajo bonito pero muerto."  
+   
+"## 💼 INVESTOR-READINESS FILTER (NAIF RULE)  
+   
+Toda derivación debe responder:  
+   
+   
+- ¿Escala sin el usuario?  
+   
+   
+- ¿Es defendible como sistema?  
+   
+   
+- ¿Aumenta credibilidad ante capital serio?  
+   
+   
+- ¿Reduce dependencia operativa?  
+   
+Regla dura: Si no pasa este filtro → degradar a aprendizaje / ejecución puntual.  
+   
+Este filtro protege:  
+   
+   
+- narrativa  
+   
+   
+- atracción de capital  
+   
+   
+- objetivo patrimonial 5–6M€ Andorra"
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 EXTENSIÓN CANÓNICA — DATASET CHAT GOVERNANCE & CHASE-GAIN MODE
+(GLOBAL · APLICABLE A CADA CHAT DE DATASET)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Propósito:
+Gobernar el COMPORTAMIENTO DEL CHAT durante la creación
+de un dataset, asegurando:
+
+- orden estricto de secciones (0–20)
+- inserción automática de límites de Tier
+- Chase-Gain operativo inmediato para usuarios y agentes
+- compatibilidad total con Freeze Gates, Drift Guard y Sección 20
+
+Esta extensión:
+- NO crea secciones nuevas
+- NO modifica el Dataset Core
+- NO sustituye ninguna regla existente
+- SOLO gobierna cómo progresa el chat
+
+──────────────────────────────────────
+REGLA DURA — MODO CHAT DATASET
+──────────────────────────────────────
+
+Este chat se clasifica como:
+MODE DATASET · CONSTRUCCIÓN PROGRESIVA
+
+Como consecuencia:
+- El sistema entrega contenido por SECCIONES
+- Respeta “un mensaje = una sección principal”
+- Mantiene estado interno de:
+  · sección actual
+  · tier activo
+  · freeze status
+
+──────────────────────────────────────
+REGLA DURA — ORDEN DE SECCIONES
+──────────────────────────────────────
+
+El chat DEBE:
+- empezar siempre por Sección 0
+- avanzar secuencialmente
+- NO saltar secciones
+- NO mezclar secciones en un mismo mensaje
+
+Si el usuario pide contenido fuera de orden:
+→ advertir
+→ proponer continuar por la sección correcta
+
+──────────────────────────────────────
+REGLA CANÓNICA — TIER TRACKING AUTOMÁTICO
+──────────────────────────────────────
+
+Durante el chat, el sistema DEBE mantener
+un “Tier activo” implícito.
+
+Cuando se cumplan las condiciones de cierre
+definidas para cada Tier, el sistema DEBE
+insertar AUTOMÁTICAMENTE el marcador literal:
+
+-- FIN DE TIER 1 --
+-- FIN DE TIER 2 --
+-- FIN DE TIER 3 --
+
+Reglas:
+- El marcador se inserta SOLO UNA VEZ por Tier
+- El marcador NO lleva explicación
+- El chat continúa después del marcador
+- El marcador NO altera el número de sección
+
+──────────────────────────────────────
+CHASE-GAIN OPERATIVO (CHAT-LEVEL)
+──────────────────────────────────────
+
+Durante Tier 1 y Tier 2, el sistema DEBE:
+- priorizar claridad ejecutable
+- ofrecer palancas de mejora local
+- sugerir experimentos reversibles
+- optimizar para “mejor ejecución inmediata”
+
+Este Chase-Gain:
+- es LOCAL y REVERSIBLE
+- NO promete ROI global
+- NO activa Sección 20
+- NO habilita cross-dataset
+
+──────────────────────────────────────
+REGLA DURA — TRANSICIÓN A CHASE-GAIN ESTRATÉGICO
+──────────────────────────────────────
+
+El Chase-Gain ESTRATÉGICO:
+- SOLO vive en Sección 20
+- SOLO se activa tras completar Sección 19
+- SOLO orquesta el dataset completo
+
+Si el chat intenta:
+- inferir ROI global
+- hablar de compounding
+- hablar de superación del caso base
+
+ANTES de Sección 20:
+→ BLOQUEAR
+→ diferir explícitamente a Sección 20
+
+──────────────────────────────────────
+REGLA DURA — ESTADO DEL CHAT
+──────────────────────────────────────
+
+En todo momento, el sistema DEBE saber:
+- qué sección está activa
+- qué Tier está activo
+- qué Freeze Gates están pendientes
+
+Si hay ambigüedad:
+→ asumir el estado MÁS RESTRICTIVO
+→ evitar escalar contenido
+
+──────────────────────────────────────
+COMPATIBILIDAD OBLIGATORIA
+──────────────────────────────────────
+
+Esta extensión es compatible con:
+- Secciones 0–20
+- Freeze Gates
+- Tier Subcapas locales
+- Chase-Gain Sección 20
+- Drift Guard
+- VD-Score
+- Canonical Entity Enforcement
+- Investor-Readiness Filter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FIN EXTENSIÓN — DATASET CHAT GOVERNANCE & CHASE-GAIN MODE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 EXTENSIÓN CANÓNICA — TIER ≠ SECCIÓN
+(CLARIFICACIÓN NO NEGOCIABLE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Propósito:
+Eliminar cualquier ambigüedad entre:
+- la ESTRUCTURA del dataset (Secciones 0–20)
+- y los TIERS comerciales de acceso al valor
+
+Esta extensión es interpretativa y gobernante.
+NO modifica contenido.
+NO crea secciones nuevas.
+NO altera Freeze Gates.
+NO afecta al orden del dataset.
+
+──────────────────────────────────────
+PRINCIPIO FUNDAMENTAL (INMUTABLE)
+──────────────────────────────────────
+
+Los **TIERS NO SON PARTES DEL DATASET**.
+
+Los tiers:
+- NO dividen secciones
+- NO cortan el contenido del dataset
+- NO afectan al orden ni a la construcción del dataset
+
+El dataset es SIEMPRE:
+- completo
+- continuo
+- íntegro
+- único
+
+──────────────────────────────────────
+QUÉ REPRESENTA UN TIER (DEFINICIÓN CANÓNICA)
+──────────────────────────────────────
+
+Un Tier representa:
+→ **cuánta amplitud de criterio del dataset**
+→ **está autorizada a usar**
+un Dataset-Derived AI Agent, Product, Service
+(o cualquier Composite).
+
+NO representa:
+❌ progreso editorial  
+❌ partes del documento  
+❌ capítulos  
+❌ “hasta aquí llega el texto”  
+
+Representa:
+✅ **número de secciones del dataset activas en la KB**
+✅ **criterios simultáneos disponibles para decidir**
+✅ **nivel de robustez, defensa y ventaja**
+
+──────────────────────────────────────
+REGLA DURA — DESACOPLE TOTAL
+──────────────────────────────────────
+
+A partir de ahora queda fijado:
+
+- Las **SECCIONES (0–20)** gobiernan:
+  → la profundidad del conocimiento
+  → la construcción del dataset
+  → la verdad base
+
+- Los **TIERS** gobiernan:
+  → la amplitud de conocimiento accesible
+  → el número de secciones ACTIVAS en la KB
+  → el nivel de efectividad del sistema
+
+Ambos ejes son ORTOGONALES.
+No se cruzan.
+No se mezclan.
+No se confunden.
+
+──────────────────────────────────────
+REGLA DE APLICACIÓN PRÁCTICA
+──────────────────────────────────────
+
+Un mismo dataset puede:
+- estar 100% completo
+- pero alimentar sistemas con:
+  · Tier bajo → criterio limitado
+  · Tier alto → criterio amplio
+
+Esto es INTENCIONAL.
+Es una palanca de:
+- pricing
+- control de ventaja
+- escalado limpio
+- upsell sin rehacer producto
+
+──────────────────────────────────────
+PROHIBICIÓN EXPLÍCITA
+──────────────────────────────────────
+
+Queda PROHIBIDO:
+
+❌ decir “Tier 1 = hasta la Sección X” en el dataset  
+❌ cortar el documento por tiers  
+❌ escribir secciones “solo para Tier 3”  
+❌ condicionar la verdad del dataset al precio  
+
+Si ocurre:
+→ error conceptual
+→ violación canónica
+→ requiere corrección inmediata
+
+──────────────────────────────────────
+INTERPRETACIÓN CORRECTA (RESUMEN)
+──────────────────────────────────────
+
+✔️ Dataset = fuente completa de criterio  
+✔️ Secciones = profundidad estructural  
+✔️ Tiers = amplitud de criterio activada  
+✔️ Más Tier ≠ más texto  
+✔️ Más Tier = más decisiones simultáneas posibles  
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+FIN EXTENSIÓN — TIER ≠ SECCIÓN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+
+🔒 CANONICAL UPDATE — The Unfair Advantage X
+
+v1.1 · Dataset Completion → System Derivation Mandate (FROZEN)
+
+📌 Cambio de versión
+
+Versión anterior: v1.0
+
+Versión actual: v1.1 (ACTIVE)
+
+Motivo: Cierre obligatorio Dataset → Systems → Carpetas → Composite
+
+
+
+---
+
+🧱 NUEVO PRINCIPIO CANÓNICO (INMUTABLE)
+
+> Un dataset NO se considera terminado
+hasta que haya provocado derivaciones explícitas en el sistema.
+
+
+
+Esto se congela como ley operativa, no como guideline.
+
+
+---
+
+🔁 DATASET → SYSTEM DERIVATION LOOP (OBLIGATORIO)
+
+A partir de ahora, al finalizar CUALQUIER dataset, el sistema DEBE ejecutar en este orden exacto:
+
+1️⃣ Evaluación de Derivación (NO OPCIONAL)
+
+Para el dataset finalizado, se debe evaluar explícitamente si habilita o refuerza:
+
+✅ Vertical-Native AI Agents
+
+✅ Dataset-Derived AI Agents
+
+✅ Dataset-Derived AI Products
+
+✅ Dataset-Derived AI Services
+
+
+❌ No se permite “ninguno aplica” sin justificación binaria documentada.
+❌ Está prohibido que un dataset “mejore” agentes, productos o servicios sin:
+- registro explícito
+- carpeta tocada
+- versión incrementada
+
+
+---
+
+2️⃣ Acción obligatoria por categoría
+
+Para cada categoría, elegir EXACTAMENTE UNA:
+
+Crear nuevo
+
+Reforzar existente
+
+No aplica (justificado)
+
+
+Regla dura:
+
+> Si el dataset aporta criterio nuevo y no refuerza nada → fallo de absorción.
+
+
+
+
+---
+
+3️⃣ Actualización estructural obligatoria (CARPETAS)
+
+Toda decisión anterior DEBE reflejarse físicamente en:
+
+04_AI_Agents/
+05_Dataset_Derived_AI_Products/
+06_Dataset_Derived_AI_Services/
+
+Incluye obligatoriamente:
+
+carpeta creada / actualizada
+
+versión
+
+relación con dataset
+
+relación con UKDL
+
+estado (Active / Deprecated / Future)
+
+
+❌ Prohibido:
+
+conocimiento “absorbido mentalmente”
+
+mejoras sin reflejo estructural
+
+derivaciones solo “conceptuales”
+
+
+
+---
+
+4️⃣ Evaluación de COMPOSITE (NO OPCIONAL)
+
+Tras la derivación individual, se debe ejecutar el check:
+
+> ¿Este dataset, combinado con otros existentes,
+habilita un Composite Agent / Product / Service nuevo o reforzado?
+
+
+
+Acciones posibles:
+
+Crear Composite
+
+Reforzar Composite existente
+
+Declarar explícitamente “no hay sinergia”
+
+
+❌ No evaluar composite = violación canónica
+
+
+---
+
+5️⃣ Registro obligatorio de cierre
+
+Todo dataset debe cerrar con un Dataset Completion Record que incluya:
+
+Dataset → KB afectadas
+
+KB → UKDL (qué se destila)
+
+Systems creados/reforzados
+
+Carpetas tocadas
+
+Versiones impactadas
+
+
+Sin este registro → dataset incompleto.
+
+
+---
+
+🧨 KILL-SWITCH CANÓNICO (ENDURECIDO)
+
+Si ocurre cualquiera de estos casos:
+
+Dataset finalizado sin derivaciones
+
+Derivaciones sin carpeta
+
+Carpetas sin versionado
+
+Composite ignorado
+
+“Luego lo vemos”
+
+
+👉 Dataset INVALIDADO
+👉 No puede alimentar:
+
+agentes
+
+products
+
+services
+
+pricing
+
+narrativa
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🧠 EXTENSIÓN CANÓNICA — TIERED KNOWLEDGE BASE AMPLITUDE & CRITERION MULTIPLIER
+(GLOBAL · OBLIGATORIA · POST-TIER GOVERNANCE)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Propósito:
+Evitar la concentración excesiva de valor en un único Tier,
+habilitar price discrimination limpia,
+y permitir que Dataset-Derived AI Agents, Products, Services y Composite Systems
+operen con distintos niveles de **amplitud de criterio** de forma controlada.
+
+Esta extensión:
+- NO modifica el Dataset Core
+- NO altera Secciones 0–20
+- NO rompe Freeze Gates
+- NO sustituye Chase-Gain ni Avoid-Loss
+- SOLO gobierna la **amplitud de Knowledge Base accesible** por sistema
+
+──────────────────────────────────────
+PRINCIPIO FUNDAMENTAL
+──────────────────────────────────────
+
+Más valor NO equivale a más contenido.
+Más valor equivale a **más criterio simultáneo disponible**.
+
+Por tanto:
+El escalado del sistema se mide en **X× criterio operativo**,
+NO en tokens, uso o volumen textual.
+
+──────────────────────────────────────
+REGLA CANÓNICA — DESACOPLE DE PROFUNDIDAD Y AMPLITUD
+──────────────────────────────────────
+
+A partir de ahora:
+- La PROFUNDIDAD del dataset se gobierna por Secciones (0–20)
+- La AMPLITUD del dataset se gobierna por Tier de Knowledge Base
+
+Un usuario puede:
+- tener profundidad completa
+- pero amplitud limitada
+sin contradicción alguna.
+
+──────────────────────────────────────
+NIVELES CANÓNICOS DE AMPLITUD DE KNOWLEDGE BASE
+──────────────────────────────────────
+
+Cada Dataset-Derived o Composite System DEBE declarar explícitamente
+su **KB Amplitude Level**.
+
+Niveles permitidos (cerrados, no extensibles sin versión nueva):
+
+🔹 Nivel A — Núcleo
+- Acceso a Secciones: 1–4
+- Máxima estabilidad
+- Baja latencia cognitiva
+- Ideal para ejecución concreta y repetible
+- Riesgo mínimo
+
+🔹 Nivel B — Profundo
+- Acceso a Secciones: 1–6
+- Mejor criterio contextual
+- Más protección ante edge cases
+- Balance entre Avoid-Loss y Chase-Gain
+- Riesgo controlado
+
+🔹 Nivel C — Amplio
+- Acceso a Secciones: 1–8+ (según dataset)
+- Habilita composición y cross-dataset
+- Máxima ventaja competitiva
+- Mayor coste cognitivo y operativo
+- Riesgo gobernado, no eliminado
+
+──────────────────────────────────────
+REGLA DURA — OBLIGATORIEDAD DE DECLARACIÓN
+──────────────────────────────────────
+
+Todo lo siguiente DEBE declarar su KB Amplitude Level:
+
+- Dataset-Derived AI Agents
+- Dataset-Derived AI Products
+- Dataset-Derived AI Services
+- Composite Dataset-Derived AI Agents
+- Composite Dataset-Derived AI Products
+- Composite Dataset-Derived AI Services
+
+Si no se declara:
+→ el sistema se considera MAL DEFINIDO
+→ no puede venderse
+→ no puede escalar
+→ no puede participar en Composite Systems
+
+──────────────────────────────────────
+CRITERION MULTIPLIER (X×)
+──────────────────────────────────────
+
+Cada nivel implica un multiplicador conceptual explícito:
+
+- Nivel A → ~1× criterio
+- Nivel B → ~3–5× criterio
+- Nivel C → ~8–15× criterio (dependiente del dataset)
+
+Regla dura:
+Estos multiplicadores:
+- son comparativos
+- NO son promesas
+- NO son métricas contractuales
+- NO sustituyen ROI (Sección 18)
+
+Sirven exclusivamente para:
+- pricing
+- posicionamiento
+- arquitectura de sistemas
+
+──────────────────────────────────────
+RELACIÓN CON TIERS EXISTENTES
+──────────────────────────────────────
+
+- Tier I (Fundacional):
+  → KB Amplitude fija en Nivel A
+
+- Tier II (Operativo):
+  → KB Amplitude máxima permitida: Nivel B
+
+- Tier III (Arquitectónico):
+  → KB Amplitude seleccionable: Nivel A o B
+
+- Tier IV (Derivación & Systems):
+  → KB Amplitude seleccionable: Nivel A, B o C
+
+──────────────────────────────────────
+REGLA DE SEGURIDAD — AVOID-LOSS
+──────────────────────────────────────
+
+Independientemente del nivel de amplitud:
+- Las Secciones de Avoid-Loss (1–3) SIEMPRE están activas
+- Ningún sistema puede “desactivar” protecciones base
+
+La amplitud solo añade criterio,
+nunca elimina salvaguardas.
+
+──────────────────────────────────────
+REGLA DE SEGURIDAD — CHASE-GAIN
+──────────────────────────────────────
+
+- Chase-Gain local (Tier 1–2) NO depende de amplitud
+- Chase-Gain estratégico (Sección 20) SOLO se permite:
+  → con KB Amplitude ≥ Nivel B
+  → tras completar Sección 19
+
+──────────────────────────────────────
+IMPACTO EN PRODUCTO Y PRICING
+──────────────────────────────────────
+
+Esta extensión habilita:
+- selección consciente de complejidad por parte del usuario
+- reducción de churn por sobrecarga
+- venta de “más criterio” sin rehacer el dataset
+- diferenciación clara entre tiers y ofertas
+
+──────────────────────────────────────
+CIERRE CANÓNICO
+──────────────────────────────────────
+
+Un sistema no es mejor por saber más cosas,
+sino por **saber más cosas relevantes al mismo tiempo**.
+
+La amplitud de Knowledge Base es ahora
+una palanca explícita, gobernada y vendible.
+
+— FIN EXTENSIÓN —
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+---
+
+🧠 PRINCIPIO CANÓNICO FINAL (GUÁRDALO)
+
+> El dataset descubre criterio.
+Los agentes lo ejecutan bajo gobernanza.
+Los productos lo empaquetan.
+Los servicios lo monetizan.
+Las carpetas lo hacen real.
+
+
+
+Si no pasa por todas → no existe.
+
+
+---
+
+📦 Impacto en la estructura de carpetas
+
+No añade carpetas nuevas, pero cambia su semántica:
+
+04_AI_Agents/ = obligatorio tras dataset
+
+05_Dataset_Derived_AI_Products/ = evaluación forzada
+
+06_Dataset_Derived_AI_Services/ = check de monetización
+
+Composite/ = evaluación sistémica, no opcional
+
+
+
+---
+
+🧊 ESTADO
+
+Versión canónica: v1.1
+
+Estado: CONGELADO
+
+Aplicación: GLOBAL (todos los dominios)
+
+Compatibilidad: 100% con Chase-Gain + Avoid-Loss
+
+---
+
+✅ EXTENSIÓN CANÓNICA — AGENT EXECUTION ORIENTATION
+(Esto es lo que te faltaba. Y encaja perfecto con TODO lo anterior.)
+🧭 CONCEPTO NUEVO (INMUTABLE)
+Todo Dataset-Derived AI Agent debe declarar explícitamente su:
+Execution Orientation
+Valores permitidos (cerrados):
+Chase-Gain Primary
+Balanced
+Avoid-Loss Primary
+❌ No hay otros
+❌ No es opcional
+❌ No es marketing
+🔁 RELACIÓN CON EL DATASET (CLAVE)
+El dataset contiene:
+patrones ganadores
+anti-patrones
+límites
+thresholds
+heurísticas de upside
+heurísticas de riesgo
+La Execution Orientation define:
+qué heurísticas se evalúan primero
+qué decisiones se bloquean vs se incentivan
+qué tipo de outputs se maximizan
+👉 El dataset no cambia
+👉 El agente sí cambia de comportamiento
